@@ -17,10 +17,13 @@
   * IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
   *************************************************************************************************************************************-->
   <title>Server Launcher</title>
-  <style>a{text-decoration:none}
-  a:visited{color:inherit}</style>
+  <style>a{text-decoration:none; color:#0066FF;}
+  a:visited{color:#0066FF;}</style>
 </head>
 <body>
+  <h3>Battlefield 1942 Server Launcher</h3>
+  <p> You need to have the launchbf <a href="https://en.wikipedia.org/wiki/URI_scheme">URI scheme</a> installed in order for the links here to work. <p>
+  <p><a href="https://dl.dropboxusercontent.com/u/29300535/Bf1942%20Server%20Launcher/Bf1942ServerLauncher0.9.zip">Download the latest version of BF1942 Server Launcher Windows installer.</a> Chrome (and other browsers) will probably mark this as potentially dangerous download.</p>
   <table>
   <tr><td><a href="#" onClick='launchServer("","", "1");'><b>Join Custom Server</b></a></td></tr>
   <tr><td>&nbsp;</td></tr>
@@ -39,6 +42,8 @@
   <tr><td><a href="#" onClick='launchServer("93.186.198.146:14569", "", "1");'>#fatality.Warserver</a></td></tr>
   <tr><td><a href="#" onClick='launchServer("62.75.146.28:14587", "", "1");'>e.S Privateserver</a></td></tr>
   </table>
+  
+  
   <script>
     function launchServer(address, password, requiresPassword) {
       if(address == ""){   
