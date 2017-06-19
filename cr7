@@ -1,0 +1,33 @@
+<html>
+    <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+		<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+		<title>CR7 Home</title> 
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>	
+		<div style="position: relative; left: 0; top: 0;">
+			<img id="ronaldoPic" alt"CR7" src="ronaldo1.jpg" style="position: relative; top: 0; left: 0;"/>
+		</div>
+		<script>
+			var w = window.innerWidth;
+			var h = window.innerHeight;
+			image = document.getElementById('ronaldoPic')
+			image.style.width = w
+			image.style.height = h
+		  function slideit(){
+		  if (!document.images)
+		  return
+		  var rand_no = Math.ceil(Math.random()* 8);
+		  image.src = "ronaldo"+rand_no+".jpg"
+		  setTimeout("slideit()",7500)
+		  }
+		  slideit();
+		myAudio = new Audio('song.mp3');
+		myAudio.loop = true;
+		myAudio.play();
+		</script
+
+	</body>
+</html>
