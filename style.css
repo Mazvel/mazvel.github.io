@@ -1,0 +1,12 @@
+html, body{ padding: 0px; margin: 0px;}
+
+
+persiePic{
+	height: 100%;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+.hover:hover{
+	cursor:pointer;
+}
