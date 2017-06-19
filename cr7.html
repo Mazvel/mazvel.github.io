@@ -11,19 +11,29 @@
 			<img id="ronaldoPic" alt"CR7" src="ronaldo1.jpg" style="position: relative; top: 0; left: 0;"/>
 		</div>
 		<script>
-			var w = window.innerWidth;
-			var h = window.innerHeight;
-			image = document.getElementById('ronaldoPic')
-			image.style.width = w
-			image.style.height = h
-		  function slideit(){
-		  if (!document.images)
-		  return
-		  var rand_no = Math.ceil(Math.random()* 8);
-		  image.src = "ronaldo"+rand_no+".jpg"
-		  setTimeout("slideit()",7500)
-		  }
-		  slideit();
+		var w = window.innerWidth;
+		var h = window.innerHeight;
+		image = document.getElementById('ronaldoPic')
+		image.style.width = w
+		image.style.height = h
+		var isPortrait = False;
+		if(window.innerHeight > window.innerWidth){
+			isPortrait = True;
+		}
+		function slideit(){
+		    if (!document.images)
+		    return
+		    if(isPortrait){
+				var rand_no = Math.ceil(Math.random()* 6);
+				image.src = "ronaldo"+rand_no+"portrait.jpg"
+			}
+			else {
+				var rand_no = Math.ceil(Math.random()* 8);
+				image.src = "ronaldo"+rand_no+".jpg"
+		    }
+			setTimeout("slideit()",7500)
+		}
+		slideit();
 		myAudio = new Audio('song.mp3');
 		myAudio.loop = true;
 		myAudio.play();
